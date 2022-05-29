@@ -95,7 +95,8 @@ To install the above libraries on your machine, use the following command.
 ### Screenshots of the App:
 ![Screenshot 2022-05-29 214601](https://user-images.githubusercontent.com/78211425/170880096-f55146d3-8b14-4a91-91de-7af71028f1ed.jpg)
 
-![WhatsApp Image 2022-05-29 at 9 44 17 PM (1)](https://user-image![WhatsApp Image 2022-05-29 at 9 44 17 PM](https://user-images.githubusercontent.com/78211425/170880139-94ed6cb9-07dd-4ddf-8b67-cb2623526986.jpeg)
+![WhatsApp Image 2022-05-29 at 9 44 17 PM (1)](https://user-images.githubusercontent.com/78211425/170880258-57427ef6-e8a3-454b-8c7c-ead63c6a4666.jpeg)
+
 
 ![WhatsApp Image 2022-05-29 at 9 44 17 PM](https://user-images.githubusercontent.com/78211425/170880163-1ad8235a-96b0-4090-b1a7-89bcd1f79f02.jpeg)
 
