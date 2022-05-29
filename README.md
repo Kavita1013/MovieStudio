@@ -62,7 +62,7 @@ I tried going through related projects which revolve around the same theme, to r
 (iii) Connect your mobile device to your machine and turn on USB debugging.
 (iv)  Click on the run button(or Shift+F10) and install the app on your mobile device.
 
-####  [Please Note: APK is also uploaded here.]
+####  Please Note: APK is also uploaded here.
 
 
 ### 2. Recommendation System:
