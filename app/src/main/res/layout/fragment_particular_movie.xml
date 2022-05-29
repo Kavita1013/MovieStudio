@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:backgroundTint="@color/field_fill">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/appBar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        app:cardBackgroundColor="@color/card_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/first"
+                android:textStyle="bold"
+                android:textColor="@color/pill_color"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/appBarName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Movie Profile"
+                android:textColor="@color/text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">"
+                android:textStyle="bold"
+                android:textColor="@color/pill_color"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/hackProfileScroll"
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintTop_toBottomOf="@id/appBar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/hackImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="144dp" />
+
+            <TextView
+                android:id="@+id/movieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_color"
+                android:padding="20dp"
+                android:textColor="@color/text"
+                android:textSize="24dp"
+                android:layout_marginTop="1dp"
+                android:text="Devsoc"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/hackImage"/>
+            <TextView
+                android:id="@+id/movieTitleEng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/card_color"
+                android:padding="15dp"
+                android:textColor="@color/text"
+                android:textSize="18dp"
+                android:layout_marginTop="1dp"
+                android:text="Devsoc"
+                android:gravity="center"
+                app:layout_constraintTop_toBottomOf="@id/movieTitle"/>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hackDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:cardBackgroundColor="@color/card_color"
+                app:layout_constraintTop_toBottomOf="@+id/movieTitleEng">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="391dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/timing"
+                        android:layout_width="227dp"
+                        android:layout_height="84dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17.33dp"
+                            android:src="@drawable/ic_baseline_access_time_24"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+
+                            android:text="Genre:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="52dp"
+
+                            android:text="Spoken Language :"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/dateStart"
+                            android:layout_width="77dp"
+                            android:layout_height="22dp"
+                            android:layout_marginLeft="136dp"
+                            android:layout_marginTop="16dp"
+                            android:text="May 21, 2021"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/dateEnd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="12dp"
+                            android:text="May 21, 2021"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="@id/dateStart"
+                            app:layout_constraintTop_toBottomOf="@id/dateStart" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/allowedNum"
+                        android:layout_width="157dp"
+                        android:layout_height="74dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17.33dp"
+                            android:src="@drawable/ic_baseline_people_24"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="24dp"
+
+                            android:text="Vote  Avg :"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="52dp"
+
+                            android:text="Status:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/maxMem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="105dp"
+                            android:layout_marginTop="16dp"
+                            android:text="5"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/minMem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="20dp"
+                            android:text="2"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="@id/maxMem"
+                            app:layout_constraintTop_toBottomOf="@id/maxMem" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="218dp"
+                        android:layout_height="75dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/timing">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="17.33dp"
+                            android:src="@drawable/ic_baseline_star_rate_24"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="48dp"
+                            android:layout_marginTop="16dp"
+
+                            android:text="Popularity:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/venue"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="40dp"
+                            android:text="Anna Auditorium"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="158dp"
+                        android:layout_height="79dp"
+                        android:layout_marginTop="4dp"
+                        app:layout_constraintStart_toStartOf="@id/allowedNum"
+                        app:layout_constraintTop_toBottomOf="@id/timing">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="17.33dp"
+
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="88dp"
+                            android:layout_height="19dp"
+                            android:layout_marginLeft="20dp"
+
+                            android:layout_marginTop="16dp"
+                            android:text="Release date:"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="12dp"
+                            app:layout_constraintLeft_toLeftOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/Date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="44dp"
+                            android:layout_marginTop="12dp"
+                            android:text="10 lakhs"
+                            android:textColor="@color/text"
+                            android:textSize="12dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/hackAbout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                app:cardBackgroundColor="@color/card_color"
+                app:layout_constraintTop_toBottomOf="@id/hackDetails">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="About"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="18dp" />
+
+
+                <TextView
+                    android:id="@+id/aboutHack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="22dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="52dp"
+
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est pulvinar facilisi phasellus magnis. Nec gravida mauris in fusce vitae pellentesque eget urna. Posuere quisque sit eget morbi vitae adipiscing. Sed sem tempor tincidunt amet. Tortor mauris ultrices eget purus diam aenean convallis eu ipsum.
+Diam feugiat auctor varius est cursus. Arcu id sed egestas pellentesque eget sit mi neque."
+                    android:textColor="@color/text" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

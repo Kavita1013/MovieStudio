@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "46535021134",
+    "project_id": "recomendation-c1257",
+    "storage_bucket": "recomendation-c1257.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:46535021134:android:3ca7d15ccae60d0c1a291f",
+        "android_client_info": {
+          "package_name": "kavita.myappcompany.recomendation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "46535021134-dpflb816thl9da3k9k0ol34ckv9brn68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg00lGf7D97nB4IYOxM6wVnxkjZJU9oBc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "46535021134-dpflb816thl9da3k9k0ol34ckv9brn68.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

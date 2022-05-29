@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/field_fill">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="371dp"
+        android:layout_height="334dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#1D2833"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/MovieName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="96dp"
+
+                android:text="Devsoc"
+                android:textColor="#E7EFEF"
+                android:textSize="24sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/HackImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-3dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="142dp"
+                app:srcCompat="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/teamSize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="271dp"
+                android:layout_marginBottom="70dp"
+
+                android:text=" Language :"
+                android:textColor="#979797"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="23dp"
+                android:layout_marginEnd="255dp"
+                android:layout_marginBottom="46dp"
+
+                android:text="Release Date :"
+                android:textColor="#979797"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="255dp"
+                android:layout_marginBottom="23dp"
+
+                android:text="vote average :"
+                android:textColor="#979797"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/knowMore_similar"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="260dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="23dp"
+                android:text="KNOW MORE"
+                android:textColor="#1EA54C"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/teamSize__min_input"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="146dp"
+                android:layout_marginEnd="151dp"
+                android:layout_marginBottom="72dp"
+                android:text="3 "
+                android:textColor="#E7EFEF" />
+
+            <TextView
+                android:id="@+id/startDate_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="147dp"
+                android:layout_marginEnd="113dp"
+                android:layout_marginBottom="49dp"
+                android:text=" May 21, 2021"
+                android:textColor="#C4C8C8"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/endDate_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="146dp"
+                android:layout_marginEnd="128dp"
+                android:layout_marginBottom="21dp"
+                android:text="May 21, 2021"
+                android:textColor="#C4C8C8"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
